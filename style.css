@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Subrayada:wght@400;700&family=Prompt:ital,wght@0,200;0,500;0,700;0,900;1,500&family=Questrial&family=Spartan:wght@400;500;700&display=swap');
+
+@font-face{
+    font-family: 'masdagBold';
+    src: url(./fonts/FontsFree-Net-Mesdag-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'theNotes';
+    src: url(./fonts/theNotes.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+/* colores temporada verano*/
+:root {
+    --text-color: #000000;
+    --basic-color: #fff;
+    --main-color: #a3d5ee;
+    --primary-color: #f0e0f1;
+    --second-color: #d3d48d;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+/*encabezado*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+/*logo Hm*/
+header .logo {
+    font-family: 'masdagBold';
+    font-size: 25px;
+    max-width: 80px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.logo span {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -20px;   
+}
+
+.logo h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+/* barra menu hambuerguesa a partir de 881px*/
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar li, ul{
+    font-family: 'Questrial';
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+/* prueba para agregar elementos */
+/* .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    background: var(--primary-color); 
+    clip-path: circle(600px at right 700px);  
+}
+
+.circle img {
+    display: flex;
+    width: 40em;
+}
+
+.circle2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    clip-path: circle(400px at left -300px); 
+}  */
+
+
+/*home*/
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative
+}
+
+.home-text h2 {
+    font-size: 50px;
+    font-family: 'masdagBold';
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+.home-text p {
+    font-family: 'Questrial';
+    max-width: 940px;
+    font-size: 15px;
+    margin: 1px 2px;
+    letter-spacing: 1px;
+}
+
+.home-text a{
+    display: flex;
+    width: 10em;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: var(--text-color);
+    color: var(--primary-color);
+    border-radius: 40px;
+    font-family: 'Questrial';
+    letter-spacing: 1px;
+    text-decoration: none;
+} 
+
+.home-text a:hover{
+    font-weight: 900;
+    color: var(--text-color);
+    background: var(--primary-color) ;
+}
+
+.home-text span {
+    color: var(--text-color);
+}
+
+/* modelo primaria */
+.modelo{
+    width: 300px;
+    margin-top: 89px;
+}
+
+/* mini modelos */
+.minmodel{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+.minmodel li{
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.minmodel li:hover{
+    transform: translatey(-15px);
+}
+
+.minmodel li img{
+    width: 45px;
+}
+
+/* iconos redes sociales */
+.socialmedia{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia a{
+    display: inline-block;
+    margin: 25px 0;
+    transform: scale(1.5);
+    color: var(--text-color);   
+}
+
+.socialmedia a:hover{
+    color: var(--main-color);
+}
+
+/* Responsive */
+
+@media (max-width: 881px) {
+
+/*encabezado*/
+header{
+    padding: 10px 45px;
+} 
+
+/*Logo*/
+.logo h1{
+    font-size: 25px;
+    max-width: 900px;
+}
+
+.logo span {
+    font-size: 10.7px;
+    margin-top: -13px;   
+}
+
+header .logo{
+    max-width: 60px;
+}
+
+section{
+     padding: 20px;
+     max-width: 100%;
+}
+/* section home*/
+.home {
+    margin-left: -124px;  
+} 
+
+.home .home-text{
+    position: relative;
+    min-width: 100%;
+    margin-top: -200px;
+}
+
+.home-text h2{
+   margin-top: 100px; 
+    font-size: 45px;
+    min-width: 400px;
+}
+
+.home-text p{
+    max-width: 400px;
+}
+
+/* modelo */
+.imgbox .modelo{
+    margin: -50px;
+    margin-top: -10px;
+}
+
+.modelo{
+    width: 300px;
+}
+
+/* min models */
+
+.minmodel{
+    left: 70%;
+    bottom: 15px;
+    transform: translateX(-70%);
+}
+
+
+.minmodel li:hover{
+    transform: translatey(-15px);
+}
+
+.minmodel li img{
+    width: 45px;
+}
+
+/* icons social media */
+.socialmedia{
+    position: absolute;
+    top: 50%;
+    right: -96px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* menu hamburguesa */
+#menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer; 
+    display: initial;
+}
+
+#menu-icon:hover{
+    color: var(--primary-color);
+}
+
+header .navbar {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+    transition: ease;
+    text-align: center;
+  }
+
+.navbar a {
+    padding: 49.9px;
+    display: block;
+}
+  
+.navbar.active {
+    top: 100%;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background: var(--main-color);
+} 
+} 
