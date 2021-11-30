@@ -240,13 +240,13 @@ header{
 
 /*Logo*/
 .logo h1{
-    font-size: 25px;
+    font-size: 35px;
     max-width: 900px;
 }
 
 .logo span {
-    font-size: 10.7px;
-    margin-top: -13px;   
+    font-size: 15px;
+    margin-top: -20px;   
 }
 
 header .logo{
@@ -260,7 +260,7 @@ section{
 }
 /* section home*/
 .home {
-    margin-top: 150px;
+    margin-top: 160px;
     flex-direction: column; 
 } 
 
@@ -286,7 +286,7 @@ section{
 /* modelo */
 .imgbox .modelo{
     margin: -50px;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 
 .modelo{
@@ -323,7 +323,7 @@ section{
 
 /* menu hamburguesa */
 #menu-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer; 
     display: initial;
 }
