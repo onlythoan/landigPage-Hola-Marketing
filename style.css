@@ -28,9 +28,7 @@
     --second-color: #d3d48d;
 }
 
-body{
-    background-color: var(--main-color);
-}
+
 
 /*encabezado*/
 header {
@@ -43,6 +41,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 150px;
+    background-color: #fff;
 }
 
 /*logo Hm*/
@@ -131,7 +130,9 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative
+    position: relative;
+
+    
 }
 
 .home-text h2 {
@@ -229,6 +230,17 @@ header .logo {
     color: var(--primary-color);
 }
 
+/* sección about */
+
+.about{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
 /* Responsive */
 
 @media (max-width: 881px) {
@@ -266,7 +278,6 @@ section{
 
 .home .home-text{
     position: relative;
-  /*   margin-left: -250px; */
     min-width: 100%;
     margin-top: -200px;
     
@@ -321,6 +332,7 @@ section{
     align-items: center;
 }
 
+
 /* menu hamburguesa */
 #menu-icon {
     font-size: 2rem;
@@ -328,9 +340,6 @@ section{
     display: initial;
 }
 
-#menu-icon:hover{
-    color: var(--primary-color);
-}
 
 header .navbar {
     position: absolute;
@@ -339,7 +348,7 @@ header .navbar {
     right: 0;
     display: flex;
     flex-direction: column;
-    background: var(--primary-color);
+    background: #fff;
     box-shadow: 0 4px 4px rgb(0 0 0 /10%);
     transition: ease;
     text-align: center;
@@ -356,6 +365,6 @@ header .navbar {
 
 .navbar a:hover {
     color: #fff;
-    background: var(--main-color);
+    background: var(--text-color);
 } 
 } 
