@@ -266,7 +266,7 @@ section{
 
 .home .home-text{
     position: relative;
-    margin-left: -250px;
+  /*   margin-left: -250px; */
     min-width: 100%;
     margin-top: -200px;
     
