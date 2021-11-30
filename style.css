@@ -266,8 +266,8 @@ header .logo{
 }
 
 section{
-     padding: 20px;
-     max-width: 100%;
+     padding: 20px; 
+     /* max-width: 100%; */
     
 }
 /* section home*/
@@ -296,19 +296,18 @@ section{
 
 /* modelo */
 .imgbox .modelo{
-    margin: -50px;
-    margin-top: 15px;
-}
+    margin: 25px;
+} 
 
 .modelo{
-    width: 300px;
+    width: 200px;
 }
 
 /* min models */
 
 .minmodel{
     left: 50%;
-    bottom: -50px;
+    bottom: 23px;
     transform: translateX(-50%);
 }
 
@@ -318,7 +317,7 @@ section{
 }
 
 .minmodel li img{
-    width: 45px;
+    width: 40px;
 }
 
 /* icons social media */
