@@ -107,18 +107,8 @@ header .logo {
     top: 0;
     left: 0;  
     clip-path: circle(700px at right 800px);
+    background: var(--main-color);
 }
-
-
-.circle2{
-    /* position: absolute; */
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--second-color);
-    clip-path: circle(700px at left -800px);
-}  
 
 
 /*home*/
@@ -197,6 +187,7 @@ header .logo {
 
 .sliderCellphoneMedia li{
     position: absolute;
+    transition: opacity 5s;
 }
 
 
@@ -373,15 +364,14 @@ header .logo{
 
 /* section home*/
 .home {
-    margin-top: 12em;
-    flex-direction: column; 
+   margin-top: 12em; 
+   flex-direction: column;  
 } 
 
 .home .home-text{
     position: relative;
     min-width: 100%;
-    margin-top: -200px;
-    
+    margin-top: -200px;    
 }
 
 .home-text h1{
@@ -396,12 +386,29 @@ header .logo{
 }
 
 
+/* cellphone */
+
+.containerSlider .sliderCellphoneMedia {
+    margin-top: -50px;
+}
+
+
+.menuSlide{
+    margin-top: -30px;
+}
+
+.circle .circle1{
+    margin-top: 300px;
+}
 /* about */
 .about {
     margin-top: 10em;
     flex-direction: column; 
 } 
 
+section .about{
+    margin-top: 200px;
+}
 .about .about-text{
     position: relative;
     min-width: 100%;
