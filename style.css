@@ -93,7 +93,6 @@ header .logo {
     color: var(--primary-color);
 }
 
-/* prueba para agregar elementos */
 
 
 
@@ -107,9 +106,28 @@ header .logo {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background: var(--main-color);
+    background-color: var(--main-color);
+
 }
 
+/* Elementos home */
+
+.element{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/elementos/elementosgraficos/verdeylila/13.png);
+    clip-path: circle(600px at right 800px);
+    z-index: 1;
+}
+
+
+.home-text{
+    z-index: 5;
+}
 .home-text h1 {
     font-size: 50px;
     font-family: 'masdagBold';
@@ -160,12 +178,14 @@ header .logo {
     align-items: center;
     width: 255px;
     height: 450px;
+    z-index: 3;
 }  
 
 .sliderCellphoneMedia{
     display: flex;
     justify-content: center; 
     align-items: center;
+    z-index: 2;
 }
 
 .sliderCellphoneMedia img{
@@ -227,6 +247,7 @@ header .logo {
     margin: 25px 0;
     transform: scale(1.5);
     color: var(--text-color);   
+    z-index: 7;
 }
 
 .socialmedia a:hover{
@@ -243,6 +264,26 @@ header .logo {
     align-items: center;
     position: relative;
     padding: 0 150px;
+    
+}
+
+/* Elementos about */
+
+ .element1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/elementos/elementosgraficos/verdeylila/14.png);
+    clip-path: circle(600px at right 800px);
+    
+} 
+
+.elementwave{
+    width: 100%;
+    height: 100%;
+    border: solid 1px;
+    z-index: -5;
 }
 
 .about-text h2 {
@@ -291,6 +332,9 @@ header .logo {
     width: 300px;
     margin-top: 89px;
 }
+.imgbox{
+    z-index: 45;
+}
 
 /* mini modelos */
 .minmodel{
@@ -299,6 +343,7 @@ header .logo {
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
+    z-index: 65;
 }
 
 .minmodel li{
@@ -363,7 +408,10 @@ header .logo{
     max-width: 500px;
 }
 
-
+.element{
+    height: 150.4vh;
+    clip-path: circle(500px at right 900px);
+} 
 /* cellphone */
 
 .sliderCellphoneMedia {
@@ -371,6 +419,7 @@ header .logo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -9;
 } 
 
 .sliderCellphoneMedia img{
@@ -396,14 +445,14 @@ header .logo{
     cursor: pointer;
 } 
 
-.circle .circle1{
-    margin-top: 300px;
-}
 /* about */
 .about {
     flex-direction: column; 
 } 
 
+.about-text{
+    z-index: 8;
+}
 
 .about-text h2{
    margin-top: 100px; 
@@ -415,6 +464,10 @@ header .logo{
     margin-bottom: 15px;
     max-width: 500px;
 }
+.element1{
+
+    clip-path: circle(109px);
+} 
 /* modelo */
 .imgbox .modelo{
     margin: 25px;
@@ -487,3 +540,26 @@ header .navbar {
     background: var(--text-color);
 } 
 } 
+
+@media (max-width: 360px) {
+
+    /*encabezado*/
+    header{
+        padding: 10px 45px;
+    } 
+    
+    /*Logo*/
+    .logo h1{
+        font-size: 35px;
+        max-width: 900px;
+    }
+    
+    .logo span {
+        font-size: 15px;
+        margin-top: -20px;   
+    }
+    
+    header .logo{
+        max-width: 30px;
+    }
+}

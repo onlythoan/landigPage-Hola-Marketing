@@ -14,7 +14,8 @@
 </head>
 <body>
     <!--Encabezado logo / barra de navegación-->
-    <main>
+    <section>
+        <div class="element"></div>
         <header>
             <a class="logo"><h1>hola</h1><span>marketing</span></a>
             <div>
@@ -28,9 +29,9 @@
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </header>
-    </main>
+    <!-- </main> -->
     <!-- Home -->
-    <section>
+  <!--   <section> -->
         <div class="home" id="home">
             <div class="home-text">
                 <h1><Span>Aprovechá</Span> tus<br> redes <span>sociales</span></h1>
@@ -62,6 +63,8 @@
     </section>
     <!-- about Us -->
     <section>
+        <div class="element1"></div>
+        <div class="elementwave"></div>
         <div class="about" id="about">
             <div class="about-text">
                 <h2><Span>¿Quienes</Span> somos<br>nosotras<span>?</span></h2>
@@ -69,12 +72,12 @@
                 <a href="#">Conocenos</a>
             </div>
             <div class="imgbox">
-                <img src="./img/modelo1.png" alt="modelo mujer" class="modelo">
+                <img src="./img/modelo1.png" class="modelo">
             </div> 
             <ul class="minmodel">
-                <li><img src="./img/yvette.png" alt=""></li>
-                <li><img src="./img/pali.png" alt=""></li>
-                <li><img src="./img/yvet & pali.png" alt=""></li>
+                <li><img src="./img/yvette.png" onclick="imgSlider('./img/modelo1.png');changeElementsColor('./img/elementos/elementosgraficos/verdeylila/14.png')"></li>
+                <li><img src="./img/pali.png" onclick="imgSlider('./img/modelo3.png');changeElementsColor('./img/elementos/elementosgraficos/verdeylila/12.png')"></li>
+                <li><img src="./img/yvet & pali.png" onclick="imgSlider('./img/modelo3.png');changeElementsColor('./img/elementos/elementosgraficos/verdeylila/11.png')"></li>
             </ul>
             </div>
     </section>
@@ -95,5 +98,15 @@
     </section>
      <!--Link js-->   
     <script src="app.js"></script>
+    <script type="text/javascript">
+        function imgSlider(anything){
+    document.querySelector('.modelo').src = anything;
+     }
+
+    function changeElementsColor(color){
+        const element = document.querySelector('.element');
+        element.style.background = color;
+    }
+    </script>
 </body>
 </html>
